@@ -27,14 +27,14 @@ const Search = ({ setMovies }) => {
 
   return (
     <Grid container spacing={2} alignItems="center" justifyContent="center" style={{ padding: "20px" }}>
-      {/* Title */}
+      
       <Grid item xs={12}>
         <Typography variant="h4" align="center" gutterBottom>
           Movie Search
         </Typography>
       </Grid>
 
-      {/* Search Input */}
+      
       <Grid item xs={12} sm={8} md={6}>
         <TextField
           fullWidth
@@ -46,7 +46,7 @@ const Search = ({ setMovies }) => {
         />
       </Grid>
 
-      {/* Search Button */}
+      
       <Grid item xs={12} sm={4} md={2}>
         <Button
           fullWidth
@@ -59,7 +59,7 @@ const Search = ({ setMovies }) => {
         </Button>
       </Grid>
 
-      {/* Exact Search Checkbox */}
+      
       <Grid item xs={12} sm={12} md={6}>
         <FormControlLabel
           control={

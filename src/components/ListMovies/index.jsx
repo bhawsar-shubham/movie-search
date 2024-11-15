@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DetailMovies from "../DetailMovies";
-import { Box, Grid, IconButton, Typography } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Box, Grid, Typography } from "@mui/material";
 
 const ListMovies = ({ movies }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);

@@ -8,16 +8,16 @@ const ModalComponent = ({ details, open, handleClose }) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "70%", // Reduced width for compactness
-    maxWidth: 350, // Maximum width for smaller modal
-    height: "auto", // Auto-adjusting height
-    maxHeight: "400px", // Limit height to ensure it's small
+    width: "70%", 
+    maxWidth: 350, 
+    height: "auto", 
+    maxHeight: "400px", 
     bgcolor: "background.paper",
     borderRadius: "8px",
     boxShadow: 24,
-    p: 2, // Reduced padding for compact layout
+    p: 2, 
     outline: "none",
-    overflowY: "auto", // Allow vertical scrolling if content exceeds height
+    overflowY: "auto", 
   };
 
   return (
@@ -28,7 +28,7 @@ const ModalComponent = ({ details, open, handleClose }) => {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        {/* Close Button */}
+        
         <IconButton
           onClick={handleClose}
           sx={{
@@ -41,7 +41,7 @@ const ModalComponent = ({ details, open, handleClose }) => {
           <CloseIcon />
         </IconButton>
 
-        {/* Movie Details */}
+        
         <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mb: 1 }}>
           {details?.Title || "Movie Details"}
         </Typography>
